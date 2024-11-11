@@ -1,0 +1,246 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Life</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">Healthy Life</div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="#hero" class="dropbtn">Fitur</a>
+          <div class="dropdown-content">
+            <a href="#fitur1">Pelacak jam tidur *</a>
+            <a href="#fitur2">Pelacak Langkah *</a>
+            <a href="#fitur3">Resep Makanan</a>
+            <a href="#fitur3">Kalender Sehat</a>
+            <a href="#fitur3">Aktivitas Fisik</a>
+            <a href="#fitur3">Monitor Kesehatan</a>
+
+          </div>
+        </li>
+        <li><a href="#artikel">Artikel & Blogs</a></li>
+      </ul>
+      <div class="login-burger-icon" onclick="toggleLoginMenu()">
+        &#9776; <!-- Ikon burger -->
+      </div>
+    
+      <!-- Hidden Login Menu -->
+      <div class="login-menu" id="loginMenu">
+        <a href="register/masuk.html" class="login-button">Login</a>
+      </div>
+    </div>
+    
+    
+  
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-content">
+       
+        <h1>Hidup sehat, <span>bahagia</span> setiap hari!</h1>
+        <p>Apakah Anda siap untuk meraih kehidupan yang lebih berharga dan bahagia? Pola hidup sehat bukan hanya tentang diet, tetapi tentang menciptakan keseimbangan dalam hidup Anda.</p>
+        <button>Tentang Kami</button>
+      </div>
+      <img src="gambar/animation.png" alt="Hero Image">
+    </div>
+
+
+
+   <center><h1>Apa <span>Rencana</span> mu hari ini?</h1>
+    <p>Rencana kesehatan yang baik adalah kunci untuk mencapai kualitas hidup yang lebih baik</p>
+      <dan>dan mencegah berbagai masalah kesehatan di masa depan.</p>
+   </center> 
+  
+  </div>
+  <div class="carousel">
+    <div class="carousel-slide active">
+        <div class="carousel-content">
+          <center><img src="gambar/Frame 9.png" alt="Healthy Menu 1">
+            <h2>Makanan sehat</h2>
+            
+            <p>Beragam resep makanan sehat sesuai kebutuhan kalian!
+               Mulai dari sarapan hingga makan malam....</p>
+
+            <button onclick="window.location.href='#'">Klik Disini</button></center>
+          
+         
+        </div>
+        
+    </div>
+    <div class="carousel-slide">
+        <div class="carousel-content">
+          <img src="gambar/Frame 8.png" alt="Healthy Menu 2">
+           <center><h2>Saran olahraga </h2>
+            <p>Rekomendasi olahraga simple yang bisa 
+              kalian lakukan di mana saja. Tetap sehat 
+              dengan terus berolahraga.</p>
+            <button onclick="window.location.href='#'">Klik Disini</button></center> 
+        </div>
+        
+    </div>
+    <div class="carousel-slide">
+        <div class="carousel-content">
+          <img src="gambar/Frame 7.png" alt="Healthy Menu 3">
+          <center>
+            <h2>Jadwal sehat</h2>
+            <p>Suka lupa untuk olahraga dan makan makanan sehat? Ayuk atur jadwal 
+              kalian agar tidak lupa untuk olahraga dan makan sehat!!</p>
+            <button onclick="window.location.href='#'">Klik Disini</button>
+          </center>
+       
+        </div>
+        
+    </div>
+    <div class="carousel-slide">
+        <div class="carousel-content">
+          <img src="gambar/frame 6.png" alt="Healthy Menu 4">
+          <center> <h2>Input Data Kesehatan</h2>
+            <p>Kira - kira berat badan kita dengan tinggi 
+              badan kita ideal engga sih? 
+              coba check dulu yuk ~</p>
+            <button onclick="window.location.href='#'">Klik Disini</button></center>
+           
+        </div>
+        
+    </div>
+    <div class="carousel-slide">
+        <div class="carousel-content">
+          <img src="gambar/Frame 5.png" alt="Healthy Menu 5">
+          <center>
+            <h2>Grafik Perkembangan</h2>
+            <p>Biar tidak lupa sama timbangan berat badan kita, coba check grafik perkembangan berat badan.
+               Apakah selama seminggu ini berat badan kita stabil?</p>
+            <button onclick="window.location.href='#'">Klik Disini</button>
+          </center>
+      
+        </div>
+        
+    </div>
+    <div class="carousel-slide">
+        <div class="carousel-content">
+          <img src="gambar/Frame 4.png" alt="Healthy Menu 5">
+          <center>
+            <h2>Pelacak Tidur</h2>
+            <p>Kamu susah tidur? Mulailah memperbaiki jam tidur kamu dan
+               check kira - kira sudah tidur 8 jam/perhari atau belum.</p>
+            <button onclick="window.location.href='#'">Klik Disini</button>
+          </center>
+           
+        </div>
+        
+    </div>
+    <div class="carousel-slide">
+      <div class="carousel-content">
+        <img src="gambar/Frame 3.png" alt="Healthy Menu 7">
+        <center>
+          <h2>Pelacak Langkah</h2>
+          <p>Mulailah cintai tubuh kamu dan check sudah berapa langkah hari ini 
+            serta kalori yang terbuang dari setiap langkahmu.</p>
+          <button onclick="window.location.href='#'">Klik Disini</button>
+        </center>
+         
+      </div>
+
+  </div>
+
+
+    <!-- Navigation arrows -->
+    <a class="carousel-control prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="carousel-control next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+
+<div class="container">
+  <div class="premium-box">
+      <h2><span class="premium-text">Beli Premium</span> Dapat Akses Fitur Eksklusif</h2>
+      <div class="feature-box">
+          <div class="feature-item">
+              <img src="gambar/buy jalan.png" alt="Dumbbell Icon">
+              <p>Kelas Workout Eksklusif</p>
+          </div>
+          <div class="feature-item">
+              <img src="gambar/buy tidur.png" alt="Meditation Icon">
+              <p>Pola tidur</p>
+              <button class="buy-button">Beli Sekarang</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<section>
+<div class="container" >
+  <h1>Artikel <span>Kesehatan</span></h1>
+  <p class="description">Temukan informasi terbaru mengenai kesehatan dalam artikel-artikel berikut untuk menjaga kualitas hidup Anda.</p>
+  
+  <div class="artikel">
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      
+      <!-- Slide 1 -->
+      <div class="artikel-slide">
+          <img src="gambar/tidur.png" alt="Sleep Tips">
+          <div class="text-content">
+              <h2>6 Tips Cara Cepat Tidur Nyenyak.</h2>
+              <p>Ada sejumlah cara agar cepat tidur untuk mengatasi insomnia, salah satunya adalah tidur dan bangun di waktu yang sama, mandi air hangat, hingga menggunakan latihan pernapasan metode 4-7-8. Tips ini mampu meningkatkan kualitas tidur dan membuat Anda terlelap lebih nyenyak di malam hari.</p>
+          </div>
+      </div>
+      
+      <!-- Slide 2 -->
+      <div class="artikel-slide">
+          <img src="gambar/makanan.png" alt="Healthy Eating Tips">
+          <div class="text-content">
+              <h2>5 Makanan yang Membantu Meningkatkan Imunitas.</h2>
+              <p>Makanan seperti buah-buahan, sayuran, dan kacang-kacangan dapat membantu meningkatkan sistem imun tubuh. Dengan pola makan yang sehat, Anda dapat terhindar dari berbagai penyakit.</p>
+          </div>
+      </div>
+      
+      <!-- Slide 3 -->
+      <div class="artikel-slide">
+          <img src="gambar/lari.png" alt="Exercise Tips">
+          <div class="text-content">
+              <h2>Latihan Fisik yang Efektif untuk Kesehatan Jantung.</h2>
+              <p>Olahraga seperti jogging, bersepeda, dan berenang sangat baik untuk kesehatan jantung. Lakukan latihan ini secara rutin untuk meningkatkan stamina dan kekuatan jantung Anda.</p>
+          </div>
+      </div>
+      
+      
+      <!-- Slide 4 -->
+      <div class="artikel-slide">
+          <img src="gambar/mental.png" alt="Mental Health Tips">
+          <div class="text-content">
+              <h2>Cara Menjaga Kesehatan Mental di Masa Pandemi.</h2>
+              <p>Menjaga kesehatan mental sangat penting, terutama di masa pandemi. Meditasi, berbicara dengan orang terdekat, dan istirahat yang cukup dapat membantu menjaga keseimbangan mental Anda.</p>
+          </div>
+      </div>
+
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+  
+  <button class="learn-more">Pelajari Lebih Lanjut</button>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="contact-info">
+          <h2>Pusat Bantuan <strong>dan Kontak</strong></h2>
+          <p><i class="icon phone"></i> Telepon: 0898888876</p>
+          <p><i class="icon email"></i> Email: healthylife@gmail.com</p>
+          <p><i class="icon instagram"></i> Instagram: healthylife</p>
+      </div>
+      <div class="note">
+          <h3>Catatan</h3>
+          <p>Hubungi kami jika mengalami kendala dalam menggunakan fitur pada website. Seperti mengalami gangguan saat membuat akun atau membeli fitur premium.</p>
+      </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+ 
+
+    
+
+</body>
+</html>

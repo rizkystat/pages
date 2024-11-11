@@ -1,0 +1,581 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  color: #2c5f2d;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  color: #2c5f2d;
+}
+
+/* Login and Dropdown Menu */
+.login-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.login-button {
+  color: #2c5f2d;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.menu-icon {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #333;
+}
+
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("gambar/hero.png"); 
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: auto;
+  padding: 20px;
+  position: relative;
+}
+
+
+.hero-content {
+  max-width: 500px;
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #5cb85c;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 25px;
+  font-size: 1em;
+  background-color: #2c5f2d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero img {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+}
+
+/* Adjust Hero Section for Small Screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-content {
+    max-width: 50%;
+  }
+
+  .hero img {
+    max-width: 50%;
+    margin-top: 20px;
+    justify-content: space-between;
+    
+  }
+}
+
+
+.plans, .articles, .contact {
+  padding: 40px 20px;
+  background-color: #fff; 
+  
+}
+
+.plans h2, .articles h2, .contact h2 {
+  color: #5cb85c;
+  margin-bottom: 20px;
+}
+
+.plan-card{
+  background-color: #28633e;
+  border: 1px solid #ddd;
+  background-image: url("gambar/layer2.png");
+  padding: 20px;
+  margin: 10px 0;
+  text-align: center;
+
+  
+
+  align-items: center;
+}
+
+.plan button {
+  padding: 10px 25px;
+  font-size: 1em;
+  background-color: #909c90;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.article-card{
+  background-color: #28633e;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  text-align: center;
+
+
+}
+.article-card img {
+  width: 20%;
+  height: auto;
+
+  
+}
+
+
+.contact p {
+  margin: 10px 0;
+  text-align: center;
+}
+.artikel {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #399248;
+  background-color:#399248;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+  text-align: justify;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: auto;
+  padding: 20px;
+ 
+  /* Light background */
+}
+
+.carousel-slide {
+  display:none ;
+  opacity: 0;
+  transition: opacity 0.10s ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
+
+.carousel-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.carousel-content {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+
+  
+}
+
+.carousel-content h2 {
+
+  color: #2c5f2d;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.carousel-content p {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 20px;
+ 
+  position: relative;
+}
+
+.carousel-content button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #2c5f2d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+}
+
+.carousel img {
+  max-width: 300px; /* Adjust as needed */
+  border-radius: 8px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;               /* Center vertically */
+  transform: translateY(-50%);  /* Center the arrow vertically */
+  font-size: 2em;          /* Adjust the size of the arrow as needed */
+  color: #333;             /* Arrow color */
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+}
+
+.carousel-control.prev {
+  left: 20px;              /* Position the left arrow 20px from the left */
+}
+
+.carousel-control.next {
+  right: 20px;             /* Position the right arrow 20px from the right */
+}
+
+.carousel-control:hover {
+  color: #000;             /* Darken color on hover for visibility */
+}
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+ 
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("gambar/bayar.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #f0f0f0;
+ 
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+.premium-box {
+  background-color:transparent;
+  padding: 20px;
+  
+}
+
+.premium-box h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.premium-text {
+  color: #2d9c6e; /* Premium green color */
+  font-weight: bold;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+.feature-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.button{
+padding: 10px 25px;
+font-size: 1em;
+background-color: #2c5f2d;
+color: #fff;
+border: none;
+cursor: pointer;
+border-radius: 5px;}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+h1 span {
+  color: #28a745;
+}
+
+.description {
+  margin: 10px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.artikel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.artikel-slide {
+  position: relative;
+  background-color: #28a745;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  text-align: left;
+}
+
+.artikel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-content h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.text-content p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.prev, .next {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: -30px;
+}
+
+.next {
+  right: -30px;
+}
+
+.learn-more {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+
+/* General Layout and Typography */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6; /* Light green background */
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c5f2d; /* Dark green for headings */
+}
+
+p {
+    color: #666;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8f5e9;
+    padding: 40px 20px;
+}
+
+.hero h1 span {
+    color: #5cb85c; /* Green highlight for text */
+}
+
+.hero img {
+    width: 150px;
+    margin-top: 20px;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f4f6;
+}
+
+.carousel-slide {
+    display: block;
+    opacity: 1;
+}
+
+.carousel-control {
+    color: #2c5f2d;
+}
+
+/* Plan Section */
+.plan-card {
+    background-color: #d0f0c0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+.contact p {
+    color: #2c5f2d;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #2c5f2d;
+}
+
+/* Buttons */
+.button, .hero button, .carousel-content button {
+    background-color: #2c5f2d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+/* Offer Section Button */
+.offer-button {
+    background-color: #2c5f2d; /* Consistent dark green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.offer-button:hover {
+    background-color: #4a7c4a; /* Slightly lighter green on hover */
+}

@@ -1,0 +1,692 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  color: #2c5f2d;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  color: #2c5f2d;
+}
+/* Dropdown Container */
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Login and Dropdown Menu */
+.login-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.login-button {
+  color: #0c0c0c;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.menu-icon {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #333;
+}
+
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("gambar/hero.png"); 
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: auto;
+  padding: 20px;
+  position: relative;
+}
+
+
+.hero-content {
+  max-width: 550px;
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #5cb85c;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 25px;
+  font-size: 1em;
+  background-color: #2c5f2d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.hero button:hover {
+  background-color: #79CE66;
+}
+.hero img {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+
+}
+
+/* Adjust Hero Section for Small Screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-content {
+    max-width: 50%;
+  }
+
+  .hero img {
+    max-width: 50%;
+    margin-top: 20px;
+    justify-content: space-between;
+    
+  }
+}
+
+
+.plans, .articles, .contact {
+  padding: 40px 20px;
+  background-color: #fff; 
+  
+}
+
+.plans h2, .articles h2, .contact h2 {
+  color: #5cb85c;
+  margin-bottom: 20px;
+}
+
+
+.plan-card{
+  background-color: #28633e;
+  border: 1px solid #ddd;
+  background-image: url("gambar/layer2.png");
+  padding: 20px;
+  margin: 10px 0;
+  text-align: center;
+
+  
+
+  align-items: center;
+}
+
+.plan button {
+  padding: 10px 25px;
+  font-size: 1em;
+  background-color: #909c90;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.article-card{
+  background-color: #28633e;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  text-align: center;
+
+
+}
+.article-card img {
+  width: 20%;
+  height: auto;
+
+  
+}
+
+
+.contact p {
+  margin: 10px 0;
+  text-align: center;
+}
+.artikel {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #399248;
+  background-color:#399248;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+  text-align: justify;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: auto;
+  padding: 20px;
+ 
+  /* Light background */
+}
+
+.carousel-slide {
+  display:none ;
+  opacity: 0;
+  transition: opacity 0.10s ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
+
+.carousel-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.carousel-content {
+  background: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+
+  
+}
+
+.carousel-content h2 {
+
+  color: #dadbda;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.carousel-content p {
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 20px;
+ 
+  position: relative;
+}
+
+.carousel-content button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #2c5f2d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+}
+.carousel-content button:hover {
+  background-color:#79CE66;
+
+}
+.carousel img {
+  max-width: 300px; /* Adjust as needed */
+  border-radius: 8px;
+ 
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;               /* Center vertically */
+  transform: translateY(-50%);  /* Center the arrow vertically */
+  font-size: 5em;          /* Adjust the size of the arrow as needed */
+  color: #333;             /* Arrow color */
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+
+}
+
+.carousel-control.prev {
+  left: 20px;              /* Position the left arrow 20px from the left */
+}
+
+.carousel-control.next {
+  right: 20px;             /* Position the right arrow 20px from the right */
+}
+
+.carousel-control:hover {
+  color: #000;             /* Darken color on hover for visibility */
+}
+.carousel-slide:nth-child(1) {
+  background-color: #f0f8ff; /* Warna latar belakang slide 1 */
+  background-image: url('gambar/foodbg.png');
+}
+
+.carousel-slide:nth-child(2) {
+  background-color: #ffe4e1; /* Warna latar belakang slide 2 */
+  background-image: url("gambar/runbg.png");
+}
+
+.carousel-slide:nth-child(3) {
+  background-color: #f5f5dc; /* Warna latar belakang slide 3 */
+  background-image: url("gambar/inputbg.png");
+}
+.carousel-slide:nth-child(4) {
+  background-color: #f5f5dc; /* Warna latar belakang slide 3 */
+  background-image: url("gambar/bratbg.png");
+}
+.carousel-slide:nth-child(5) {
+  background-color: #f5f5dc; /* Warna latar belakang slide 3 */
+  background-image: url("gambar/timbanganbg.png");
+}
+.carousel-slide:nth-child(6) {
+  background-color: #f5f5dc; /* Warna latar belakang slide 3 */
+  background-image: url("gambar/turubg.png");
+}
+.carousel-slide:nth-child(7) {
+  background-color: #f5f5dc; /* Warna latar belakang slide 3 */
+  background-image: url("gambar/langkahbg.png");
+}
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+ 
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("gambar/postpaid.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: relative;
+ 
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+.premium-box {
+  background-color:transparent;
+  padding: 20px;
+  
+}
+
+.premium-box h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.premium-text {
+  color: #2d9c6e; /* Premium green color */
+  font-weight: bold;
+}
+
+.feature-box {
+  display: flex;
+  justify-content:center;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+
+.feature-item {
+ 
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+.feature-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Other styles for the button remain the same */
+.buy-button {
+  display: block;
+  margin: 0 auto; /* Pastikan button berada di tengah */
+  padding: 10px 20px;
+  background-color: #2d9c6e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.buy-button:hover {
+  background-color:#79CE66;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #111111;
+}
+
+h1 span {
+  color: #28a745;
+}
+
+.description {
+  margin: 10px 0;
+  color: #141414;
+  font-size: 14px;
+}
+
+.artikel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.artikel-slide {
+  position: relative;
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  text-align: left;
+  
+
+}
+
+.artikel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+}
+
+.text-content h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.text-content p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.prev, .next {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: -30px;
+}
+
+.next {
+  right: -30px;
+}
+
+.learn-more {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.learn-more:hover{
+  background-color: #79CE66;
+}
+/* Tampilkan ikon burger untuk login */
+.login-burger-icon {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Sembunyikan login menu secara default */
+.login-menu {
+  display: none;
+  position: absolute;
+  top: 60px; /* Atur sesuai posisi */
+  right: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 2;
+}
+
+/* Style untuk login link */
+.login-button {
+  color: #2c5f2d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Untuk layar kecil jika diperlukan */
+@media (max-width: 768px) {
+  .login-menu {
+    width: 100%;
+    right: 0;
+  }
+}
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.contact-info h2 {
+  color: #006400;
+  font-weight: normal;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact-info h2 strong {
+  font-weight: bold;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  animation: slideIn 1s ease-in-out;
+}
+
+.note h3 {
+  color: #006400;
+  font-weight: bold;
+  margin-bottom: 5px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.note p {
+  margin: 0;
+  max-width: 250px;
+  color: #333;
+  font-size: 14px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Custom icon styles */
+.icon.phone:before {
+  content: "📞";
+}
+
+.icon.email:before {
+  content: "✉️";
+}
+
+.icon.instagram:before {
+  content: "❤️";
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
